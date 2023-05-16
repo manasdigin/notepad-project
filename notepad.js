@@ -1,11 +1,12 @@
 function changeFont(font) {
-    document.getElementById("content").style.fontFamily = font.value;
-
+   var s= document.getElementById("content");
+   s.style.fontFamily = font.value;
+  
   }
   function changeSize(n) {
     var s = document.getElementById("content");
     s.style.fontSize = n.value + "px";
-    console.log(s);
+    
   }
   function changeColor(c) {
     var s = document.getElementById("content");
@@ -41,12 +42,5 @@ function changeFont(font) {
     }
   }
   function normal_click() {
-    document.getElementById("content").style.fontStyle = "normal";
-    document.getElementById("content").style.textDecoration = "none";
-    document.getElementById("content").style.fontWeight = "normal";
-    document.getElementById("content").style.backgroundColor = "white";
-    document.getElementById("content").style.color = "black";
-    document.getElementById("content").style.fontFamily = "Arial";
-    document.getElementById("content").style.fontSize = 14 + "px";
     document.getElementById("content").value = "";
   }
